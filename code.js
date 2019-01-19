@@ -1,8 +1,16 @@
 class Boy {
   speak() {
-    console.log('Blah Blah');
+    console.log(`I am  ${this.fullName} and I am ${this.age} years old`);
+  }
+
+  get age() {
+    return '6';
+  }
+
+  get fullName() {
+    return 'Gavin Araujo';
   }
 }
 
-const boy = new Boy();
-boy.speak();
+const Gavin = new Boy();
+Gavin.speak();
